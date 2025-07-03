@@ -5,7 +5,7 @@ POINT_CLOUD_RANGE: [-80, -80, -2, 80, 80, 5]
 
 MAP_CLASS_TO_KITTI: {
     'car': 'Car',
-    'Pedestrian': 'Pedestrian',
+    'pedestrian': 'Pedestrian',
     'bike': 'Cyclist',
     'truck': 'Truck'
 }
