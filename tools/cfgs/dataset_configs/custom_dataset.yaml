@@ -4,10 +4,9 @@ DATA_PATH: '../data/custom'
 POINT_CLOUD_RANGE: [-80, -80, -2, 80, 80, 5]
 
 MAP_CLASS_TO_KITTI: {
-    'car': 'Car',
-    'pedestrian': 'Pedestrian',
-    'bike': 'Cyclist',
-    'truck': 'Truck'
+    'Vehicle': 'Car',
+    'Pedestrian': 'Pedestrian',
+    'Cyclist': 'Cyclist',
 }
 
 DATA_SPLIT: {
