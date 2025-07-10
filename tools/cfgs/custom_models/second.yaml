@@ -1,4 +1,4 @@
-CLASS_NAMES: ['Cyclist', 'Vehicle', 'Pedestrian']
+CLASS_NAMES: ['Vehicle', 'Pedestrian', 'Cyclist']
 
 DATA_CONFIG:
     _BASE_CONFIG_: cfgs/dataset_configs/custom_dataset.yaml
@@ -60,12 +60,22 @@ MODEL:
                 'class_name': 'Cyclist',
                 'anchor_sizes': [[1.76, 0.6, 1.73]],
                 'anchor_rotations': [0, 1.57],
-                'anchor_bottom_heights': [0],
+                'anchor_bottom_heights': [0.2],
                 'align_center': False,
                 'feature_map_stride': 8,
-                'matched_threshold': 0.5,
-                'unmatched_threshold': 0.35
-            }
+                'matched_threshold': 0.4,
+                'unmatched_threshold': 0.3
+            },
+            #{
+                #'class_name': 'Truck',
+                #'anchor_sizes': [[10.9, 2.86, 3.2]],
+                #'anchor_rotations': [0, 1.57],
+                #'anchor_bottom_heights': [0],
+                #'align_center': False,
+                #'feature_map_stride': 8,
+                #'matched_threshold': 0.6,
+                #'unmatched_threshold': 0.45
+                #}
         ]
 
         TARGET_ASSIGNER_CONFIG:
